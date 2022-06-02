@@ -14,6 +14,7 @@ class MainController extends AbstractController {
      * @Route("/",name="app_calculatrice")
      */
     public function calculatrice(Request $request):Response{
+        // dump($request->query->all());
         $operateurs = ["+", "-", "x", "/","%","exp"];
         $op1=$request->query->get("premiereValeur");
         $op=$request->query->get("operateur");
