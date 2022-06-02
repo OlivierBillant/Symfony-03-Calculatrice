@@ -21,8 +21,8 @@ class MainController extends AbstractController {
         $result=null;
         $erreur=null;
         // var_dump($operateurs);
-        var_dump($op1);
-        var_dump($op);
+        // var_dump($op1);
+        // var_dump($op);
         if((isset($op)) && isset($op1) && isset($op2)){
             if(!empty($op) && is_numeric($op1) && is_numeric($op2)){
         $a=$op1;

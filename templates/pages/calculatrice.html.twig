@@ -33,15 +33,15 @@
 			</div>
 		</form>
 		{% if op1 is not null and op is not null and op2 is not null and result is not null	and op1 is defined and op is defined and op2 is defined and result is defined %}
-			<div class="alert alert-danger text-center" role="alert">
+			<div class="alert alert-success text-center" role="alert">
 				{{ result }}
 			</div>
-		{# {% elseif(erreur is defined) %}
+		{% elseif(erreur is defined and erreur is not null) %}
 			<div class="alert alert-danger text-center" role="alert">
 				{{ erreur }}
-			</div> #}
+			</div>
 		{% endif %}
-		{{dump(result)}}
+		{# {{dump(result)}} #}
 	</div>
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
